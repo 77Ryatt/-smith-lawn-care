@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smith Lawn Care | Hinton, Oklahoma</title>
+  <style>
+    :root { --green:#173f2a; --lime:#8bc34a; --cream:#f5f7f1; --dark:#10251a; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:Arial, sans-serif; color:var(--dark); background:var(--cream); line-height:1.6; }
+    header { background:var(--green); color:white; padding:22px 8%; display:flex; justify-content:space-between; align-items:center; }
+    .logo { font-size:1.4rem; font-weight:800; }
+    nav a { color:white; text-decoration:none; margin-left:22px; }
+    .hero { min-height:70vh; display:flex; align-items:center; padding:70px 8%; background:linear-gradient(120deg,#173f2a,#2e6543); color:white; }
+    .hero-content { max-width:650px; }
+    .tag { color:#c7ef91; font-weight:bold; text-transform:uppercase; letter-spacing:2px; }
+    h1 { font-size:clamp(3rem,8vw,5.5rem); line-height:1; margin:14px 0 22px; }
+    .hero p { font-size:1.2rem; margin-bottom:30px; }
+    .button { display:inline-block; background:var(--lime); color:#10251a; padding:14px 24px; border-radius:999px; text-decoration:none; font-weight:800; }
+    section { padding:70px 8%; }
+    .section-title { text-align:center; font-size:2.3rem; margin-bottom:12px; }
+    .section-subtitle { text-align:center; margin:0 auto 38px; max-width:600px; color:#526257; }
+    .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; max-width:1000px; margin:auto; }
+    .card { background:white; padding:30px; border-radius:20px; box-shadow:0 8px 30px #10251a12; }
+    .icon { font-size:2rem; margin-bottom:12px; }
+    .card h3 { margin-bottom:8px; }
+    .contact { background:var(--green); color:white; text-align:center; }
+    .contact p { margin:10px auto 25px; max-width:600px; }
+    footer { background:#0c1d13; color:#b9c5bc; text-align:center; padding:22px; font-size:.9rem; }
+    @media(max-width:700px) {
+      header { flex-direction:column; gap:12px; }
+      nav a { margin:0 7px; font-size:.9rem; }
+      .hero { min-height:60vh; }
+      .cards { grid-template-columns:1fr; }
+      section { padding:55px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌿 Smith Lawn Care</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="tag">Hinton, Oklahoma</div>
+        <h1>Fresh lawn.<br>Clean look.</h1>
+        <p>Reliable lawn care for homes and yards around Hinton. Mowing, edging, and weed eating done right.</p>
+        <a class="button" href="#contact">Get a Quote</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2 class="section-title">What We Do</h2>
+      <p class="section-subtitle">Simple, dependable yard care to keep your property looking its best.</p>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">🚜</div>
+          <h3>Lawn Mowing</h3>
+          <p>Clean, even mowing to keep your lawn looking neat and maintained.</p>
+        </div>
+        <div class="card">
+          <div class="icon">✂️</div>
+          <h3>Edging</h3>
+          <p>Sharp, clean edges around sidewalks, driveways, and other areas.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌱</div>
+          <h3>Weed Eating</h3>
+          <p>Trimmed grass and weeds around fences, trees, buildings, and hard-to-reach spots.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Smith Lawn Care</h2>
+      <p class="section-subtitle">Locally serving Hinton with straightforward, hardworking lawn care. Our goal is simple: leave every yard looking better than we found it.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Ready for a Better-Looking Yard?</h2>
+      <p>Contact Smith Lawn Care for a quote and let’s get your lawn looking fresh.</p>
+      <a class="button" href="tel:+14059524995">Call for a Quote</a>
+      <p style="font-size:1.05rem;margin-top:18px;"><strong>(405) 952-4995</strong></p>
+    </section>
+  </main>
+
+  <footer>© 2026 Smith Lawn Care • Hinton, Oklahoma</footer>
+</body>
+</html>
